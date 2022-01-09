@@ -17,6 +17,7 @@ export default function Inquiry() {
               name="name"
               className={styles.name}
               placeholder="Kishore Naskar"
+              required
             />
           </div>
           <div className={styles.form_group}>
@@ -25,17 +26,18 @@ export default function Inquiry() {
               type="tel"
               id="phone"
               name="phone"
-              placeholder="+91 9804893907"
+              placeholder="+91 9804XXXXXX"
+              required
             />
           </div>
           <div className={`${styles.form_group} ${styles.form_date}`}>
             <div>
               <label htmlFor="arrive">Arriving on:</label> <br />
-              <input type="date" id="arrive" name="arrive" />
+              <input type="date" id="arrive" name="arrive" required />
             </div>
             <div>
               <label htmlFor="depar">Departure:</label> <br />
-              <input type="date" id="depar" name="depar" />
+              <input type="date" id="depar" name="depar" required />
             </div>
           </div>
           <div>
