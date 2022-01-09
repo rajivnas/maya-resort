@@ -48,12 +48,16 @@ export default function SpecialMoment() {
                   <div className={styles.lightbox} id={i}>
                     <a
                       href={`#${i - 1}`}
-                      className="light-btn btn-prev"
+                      className={`${styles.light_btn} ${styles.btn_prev}`}
                       aria-label="Prev"
                     >
                       <FaArrowLeft />
                     </a>
-                    <a href="#_" className="btn-close" aria-label="Close">
+                    <a
+                      href="#_"
+                      className={styles.btn_close}
+                      aria-label="Close"
+                    >
                       <MdOutlineClose size={36} />
                     </a>
                     <GatsbyImage
@@ -62,7 +66,7 @@ export default function SpecialMoment() {
                     />
                     <a
                       href={`#${i + 1}`}
-                      className="light-btn btn-next"
+                      className={`${styles.light_btn} ${styles.btn_next}`}
                       aria-label="Next"
                     >
                       <FaArrowRight />

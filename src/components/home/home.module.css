@@ -436,6 +436,7 @@
     grid-column-gap: 0.15rem;
     grid-template-columns: repeat(3, 1fr);
   }
+
   .lightbox {
     position: fixed;
     z-index: 999;
@@ -444,7 +445,7 @@
     text-align: center;
     top: 0;
     left: 0;
-    padding-top: calc(100vh - 85vh);
+    padding-top: calc(100vh - 80vh);
     background: rgba(0, 0, 0, 0.8);
     opacity: 0;
   }
@@ -473,7 +474,7 @@
     opacity: 1;
     transition: opacity 0.6s;
   }
-  .light-btn {
+  .light_btn {
     color: #fafafa;
     padding: 5px 15px;
     text-decoration: none;
@@ -483,13 +484,13 @@
     top: calc(100vh - 50vh);
     z-index: 99;
   }
-  .btn-prev {
+  .btn_prev {
     left: 7%;
   }
-  .btn-next {
+  .btn_next {
     right: 7%;
   }
-  .btn-close {
+  .btn_close {
     position: absolute;
     right: 5%;
     top: 2%;
@@ -505,7 +506,7 @@
     height: 5rem;
   }
   .lightbox {
-    padding-top: calc(100vh - 95vh);
+    padding-top: calc(100vh - 90vh);
   }
   .lightbox img {
     max-height: 520px;

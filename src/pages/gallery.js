@@ -6,6 +6,7 @@ import { MdOutlineClose } from "react-icons/md"
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 import Layout from "../components/share/Layout"
 import Seo from "../components/share/Seo"
+import * as styles from "../styles/lightbox.module.css"
 
 export default function gallery({ data }) {
   const gallery = data.allContentfulGalleryPage.nodes[0]
@@ -50,15 +51,19 @@ export default function gallery({ data }) {
                     />
                   </a>
 
-                  <div className="lightbox" id={i}>
+                  <div className={styles.lightbox} id={i}>
                     <a
                       href={`#${i - 1}`}
-                      className="light-btn btn-prev"
+                      className={`${styles.light_btn} ${styles.btn_prev}`}
                       aria-label="Preview"
                     >
                       <FaArrowLeft />
                     </a>
-                    <a href="#_" className="btn-close" aria-label="Close">
+                    <a
+                      href="#_"
+                      className={styles.btn_close}
+                      aria-label="Close"
+                    >
                       <MdOutlineClose size={36} />
                     </a>
                     <GatsbyImage
@@ -67,7 +72,7 @@ export default function gallery({ data }) {
                     />
                     <a
                       href={`#${i + 1}`}
-                      className="light-btn btn-next"
+                      className={`${styles.light_btn} ${styles.btn_next}`}
                       aria-label="Next"
                     >
                       <FaArrowRight />
