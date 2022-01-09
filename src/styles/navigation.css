@@ -1,0 +1,236 @@
+.top-bar {
+  display: none;
+}
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 2;
+}
+header .nav-logo {
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  margin-bottom: 0.3rem;
+  float: left;
+  font-weight: bold;
+}
+header .nav-logo .logo {
+  display: none;
+}
+.menu-toggle {
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  margin-top: 0.2rem;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  background: var(--bg-first);
+}
+header .topnav {
+  display: none;
+}
+
+.navScroll {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  background: whitesmoke;
+  position: fixed;
+  transition: 0.3s ease-in-out all;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 20%);
+}
+.navScroll .nav-logo {
+  color: #000;
+}
+.navScroll .nav-logo .logo {
+  display: block;
+}
+.navScroll .nav-logo .logo-white {
+  display: none;
+}
+.navScroll .menu-toggle {
+  color: #000;
+}
+
+header .sidenav {
+  position: absolute;
+  width: 100%;
+  margin-top: -50px;
+  height: 100vh;
+  background: rgb(255, 254, 254);
+  top: 50px;
+  left: -100%;
+  transition: 0.5s;
+}
+header .sidenav .menu-toggle {
+  color: #000;
+  margin-right: 1rem;
+}
+header .sidenav .nav-items {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  margin-left: 2.5rem;
+}
+header .sidenav a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  color: var(--primary-txt);
+  text-decoration: none;
+  display: block;
+}
+header .sidenav.active {
+  left: 0;
+}
+
+/* footer  */
+.footer {
+  padding-top: 3rem;
+  background-color: var(--bg-secondary);
+}
+.footer .container .footer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer .container .footer-wrapper .logo {
+  margin-bottom: 0.4rem;
+}
+.footer .container .footer-wrapper .footer-logo p {
+  display: none;
+}
+.footer div h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+.footer ul li a p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-txt);
+}
+.footer .footer-others {
+  margin-top: -2.5rem;
+}
+.footer .footer_credit {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.footer .footer_credit p {
+  font-size: 1rem;
+}
+.footer .footer_credit span {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  header {
+    padding: 5px 30px;
+  }
+  .navScroll {
+    padding: 5px 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 5px 50px;
+    background-color: transparent;
+  }
+  header .topnav .nav_links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  header .topnav .nav_links a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+  .navScroll {
+    padding: 5px 50px;
+  }
+  .navScroll .topnav .nav_links a {
+    color: #000;
+  }
+
+  /* footer  */
+  .footer {
+    border-top: none;
+  }
+  .footer .container .footer-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer .container .footer-wrapper div {
+    margin: 0 auto;
+  }
+  .footer .container .footer-wrapper .logo {
+    margin-bottom: 0.2rem;
+  }
+  .footer .container .footer-wrapper .footer-logo p {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--primary-txt);
+  }
+  .footer ul li a p {
+    font-size: 1rem;
+  }
+  .footer .footer-contact {
+    margin-top: 0;
+  }
+  .footer .footer_credit {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+  }
+  .footer .footer_credit p {
+    font-size: 0.8rem;
+  }
+  .footer .footer_credit span {
+    display: block;
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .top-bar {
+    display: flex;
+    padding: 0.1rem 0;
+    justify-content: space-between;
+  }
+  .top-bar p {
+    opacity: 0.8;
+    font-size: 0.65rem;
+  }
+  header {
+    top: 1rem;
+    padding: 5px 50px;
+  }
+  header .topnav {
+    float: right;
+    display: block;
+  }
+  .navScroll {
+    padding: 5px 80px;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  header .sidenav {
+    display: none;
+  }
+}
+
+@media (min-width: 1124px) {
+  header {
+    top: 1rem;
+    padding: 5px 80px;
+  }
+}
