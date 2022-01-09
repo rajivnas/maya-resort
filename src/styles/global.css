@@ -73,6 +73,7 @@ section {
 /* React Testimonial */
 .react-multiple-carousel__arrow {
   background: rgba(0, 0, 0, 0.3) !important;
+  z-index: 1;
 }
 .react-multiple-carousel__arrow:hover {
   background: rgba(0, 0, 0, 0.4) !important;
