@@ -25,13 +25,7 @@ export default function Navbar() {
     <header className={navScroll ? "navScroll" : "navbar"}>
       <div className="nav-logo">
         <Link to="/">
-          <img
-            src="/logo.png"
-            className="logo"
-            width="100"
-            height="auto"
-            alt="Logo"
-          />
+          <img src="/logo.png" className="logo" alt="Logo" />
           <img
             src="/logo-white.png"
             className="logo-white"

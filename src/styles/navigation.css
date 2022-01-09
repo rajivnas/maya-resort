@@ -50,6 +50,8 @@ header .topnav {
 }
 .navScroll .nav-logo .logo {
   display: block;
+  width: auto;
+  max-height: 100%;
 }
 .navScroll .nav-logo .logo-white {
   display: none;
