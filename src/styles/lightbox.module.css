@@ -55,8 +55,7 @@
     padding-top: calc(100vh - 80vh);
   }
   .lightbox img {
-    width: 70%;
-    max-width: 650px;
+    max-height: 520px;
   }
 }
 
