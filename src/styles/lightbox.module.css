@@ -52,19 +52,16 @@
 
 @media (min-width: 768px) {
   .lightbox {
-    padding-top: calc(100vh - 75vh);
+    padding-top: calc(100vh - 80vh);
   }
   .lightbox img {
     width: 70%;
-    max-height: 550px;
+    max-width: 650px;
   }
 }
 
 @media (min-width: 992px) {
   .lightbox {
-    padding-top: calc(100vh - 85vh);
-  }
-  .lightbox img {
-    max-height: 650px;
+    padding-top: calc(100vh - 90vh);
   }
 }
