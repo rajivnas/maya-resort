@@ -5,7 +5,10 @@ export default function Inquiry() {
   return (
     <div className={styles.container}>
       <div className={styles.inquiry_form}>
-        <form action="#">
+        <form
+          action="https://mr-inquiry.herokuapp.com/api/inquiry"
+          method="POST"
+        >
           <div className={styles.form_group}>
             <label htmlFor="name">Your name:</label> <br />
             <input
