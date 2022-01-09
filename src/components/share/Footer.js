@@ -9,7 +9,13 @@ export default function Footer() {
         <div className="footer-wrapper">
           <div className="footer-logo">
             <Link to="/">
-              <img src="/logo.png" className="logo" width="115" alt="Logo" />
+              <img
+                src="/logo.png"
+                className="logo"
+                width="100"
+                height="auto"
+                alt="Logo"
+              />
             </Link>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,

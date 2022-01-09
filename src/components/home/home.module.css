@@ -444,7 +444,7 @@
     text-align: center;
     top: 0;
     left: 0;
-    padding-top: calc(100vh - 75vh);
+    padding-top: calc(100vh - 85vh);
     background: rgba(0, 0, 0, 0.8);
     opacity: 0;
   }
@@ -505,7 +505,7 @@
     height: 5rem;
   }
   .lightbox {
-    padding-top: calc(100vh - 85vh);
+    padding-top: calc(100vh - 95vh);
   }
   .lightbox img {
     max-height: 520px;
