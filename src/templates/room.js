@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { FaRupeeSign } from "react-icons/fa"
 import Layout from "../components/share/Layout"
-import Background from "../components/share/Background"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { INLINES } from "@contentful/rich-text-types"
 import { Carousel } from "react-responsive-carousel"
@@ -13,13 +12,6 @@ import * as styles from "./room.module.css"
 
 export default function room({ data }) {
   const roomDetails = data.contentfulRooms
-
-  const pluginImage = getImage(roomDetails.thumbnail.gatsbyImageData)
-
-  const bgImage = [
-    `linear-gradient(rgba(233, 186, 186, 0.208), rgba(20, 20, 20, 0.479))`,
-    pluginImage,
-  ]
 
   const options = {
     renderNode: {
@@ -40,7 +32,8 @@ export default function room({ data }) {
         description=""
         keywords="Pratham Milan Garden, Pratham Milan banquet hall"
       />
-      <Background image={bgImage} title={roomDetails.name} />
+
+      <div className={styles.blank_space}></div>
 
       <div className={`${styles.page_content} ${styles.container}`}>
         <div className={styles.room_details}>
@@ -83,9 +76,6 @@ export const query = graphql`
         raw
       }
       slider {
-        gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, quality: 70)
-      }
-      thumbnail {
         gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, quality: 70)
       }
     }

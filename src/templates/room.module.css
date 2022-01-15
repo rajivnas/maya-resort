@@ -5,8 +5,12 @@
 }
 
 /* ------------------ */
+.blank_space {
+  background-color: rgb(156, 108, 44);
+  height: 3.5rem;
+}
 .page_content {
-  margin-top: -3.5rem;
+  margin-top: 0;
   margin-bottom: 3.5rem;
 }
 .room_details .room_slider {
@@ -47,10 +51,6 @@
 }
 
 @media (min-width: 768px) {
-  .page_content {
-    margin-top: -3.5rem;
-  }
-
   /* Room Page  */
   .room_details {
     display: flex;
