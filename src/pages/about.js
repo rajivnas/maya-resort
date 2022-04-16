@@ -1,13 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { getImage } from "gatsby-plugin-image"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import Background from "../components/share/Background"
-import { MdOutlineClose } from "react-icons/md"
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 import Layout from "../components/share/Layout"
 import Seo from "../components/share/Seo"
-import * as styles from "../styles/lightbox.module.css"
 
 export default function about({ data }) {
   const about = data.allContentfulAboutPage.nodes[0]
@@ -28,49 +25,7 @@ export default function about({ data }) {
       />
       <Background image={bgImage} title={about.title} />
 
-      <div className="page-content container">
-        {renderRichText(about.body)}
-
-        <div className="ab-photo-grid">
-          {about.photos.map((photo, i) => {
-            return (
-              <div key={i}>
-                <a href={`#${i}`}>
-                  <GatsbyImage
-                    image={getImage(photo.gatsbyImageData)}
-                    alt={about.title}
-                    className="ab-image-item"
-                  />
-                </a>
-
-                <div className={styles.lightbox} id={i}>
-                  <a
-                    href={`#${i - 1}`}
-                    className={`${styles.light_btn} ${styles.btn_prev}`}
-                    aria-label="Prev"
-                  >
-                    <FaArrowLeft />
-                  </a>
-                  <a href="#_" className={styles.btn_close} aria-label="Close">
-                    <MdOutlineClose size={36} />
-                  </a>
-                  <GatsbyImage
-                    image={getImage(photo.gatsbyImageData)}
-                    alt={about.title}
-                  />
-                  <a
-                    href={`#${i + 1}`}
-                    className={`${styles.light_btn} ${styles.btn_next}`}
-                    aria-label="Next"
-                  >
-                    <FaArrowRight />
-                  </a>
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      </div>
+      <div className="page-content container">{renderRichText(about.body)}</div>
     </Layout>
   )
 }
@@ -89,13 +44,6 @@ export const query = graphql`
         }
         body {
           raw
-        }
-        photos {
-          gatsbyImageData(
-            layout: CONSTRAINED
-            placeholder: BLURRED
-            quality: 70
-          )
         }
       }
     }

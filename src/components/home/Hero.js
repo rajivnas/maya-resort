@@ -10,7 +10,7 @@ export default function Hero() {
         <div className={styles.container}>
           <div className={styles.content}>
             <h1>
-              Your Favourite Destination <br /> For Next Vacation
+              Your favourite destination <br /> for next vacation
             </h1>
 
             <Link to="/gallery">

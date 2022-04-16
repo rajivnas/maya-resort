@@ -19,58 +19,39 @@
 .testimonial {
   background-color: var(--bg-secondary);
 }
-.testimonial .container .tes_wrapper .tes_card {
+.testimonial .container .tes_card {
   padding: 2rem 1rem;
   background-color: #fff;
 }
-.testimonial .container .tes_wrapper .tes_card p {
+.testimonial .container .tes_card p {
   margin-bottom: 2.5rem;
 }
-.testimonial .container .tes_wrapper .tes_card .guest_info {
+.testimonial .container .tes_card .guest_info {
   display: flex;
   justify-content: left;
   column-gap: 0.5rem;
   padding-bottom: 1rem;
 }
-.testimonial .container .tes_wrapper .tes_card .guest_info img {
+.testimonial .container .tes_card .guest_info img {
   width: 2.6rem;
   height: auto;
   border-radius: 100%;
 }
-.testimonial .container .tes_wrapper .tes_card .guest_info span {
+.testimonial .container .tes_card .guest_info span {
   padding-top: 0.5rem;
 }
 
 @media (min-width: 768px) {
   /* testimonial */
-  .testimonial .container .tes_wrapper .tes_card {
-    padding: 3rem 2rem;
+  .testimonial .container .tes_card {
+    padding: 2rem 2.5rem;
+    background-color: var(--bg-primary);
   }
 }
 
 @media (min-width: 992px) {
   /* testimonial */
-  .testimonial .container .tes_wrapper {
-    display: flex;
-    column-gap: 0.8rem;
-    justify-content: space-around;
-  }
-  .testimonial .container .tes_wrapper .tes_card {
-    padding: 1.5rem;
-  }
-  .testimonial .container .tes_wrapper .tes_card {
-    background-color: var(--bg-primary);
-  }
-  .testimonial .container .tes_wrapper .tes_card.quote_icon {
+  .testimonial .container .tes_card.quote_icon {
     font-size: 0.8rem;
-  }
-  .testimonial .container .tes_wrapper .tes_card p {
-    font-size: 0.87rem;
-  }
-  .testimonial .container .tes_wrapper .tes_card span {
-    font-size: 0.75rem;
-  }
-  .testimonial .container .tes_wrapper .tes_card small {
-    font-size: 0.65rem;
   }
 }

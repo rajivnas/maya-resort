@@ -1,8 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { MdOutlineClose } from "react-icons/md"
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 import * as styles from "./home.module.css"
 
 const query = graphql`
@@ -37,41 +35,11 @@ export default function SpecialMoment() {
             .map((image, i) => {
               return (
                 <div key={i}>
-                  <a href={`#${i}`}>
-                    <GatsbyImage
-                      image={getImage(image.gatsbyImageData)}
-                      alt={images.name}
-                      className={styles.image_item}
-                    />
-                  </a>
-
-                  <div className={styles.lightbox} id={i}>
-                    <a
-                      href={`#${i - 1}`}
-                      className={`${styles.light_btn} ${styles.btn_prev}`}
-                      aria-label="Prev"
-                    >
-                      <FaArrowLeft />
-                    </a>
-                    <a
-                      href="#_"
-                      className={styles.btn_close}
-                      aria-label="Close"
-                    >
-                      <MdOutlineClose size={36} />
-                    </a>
-                    <GatsbyImage
-                      image={getImage(image.gatsbyImageData)}
-                      alt={images.name}
-                    />
-                    <a
-                      href={`#${i + 1}`}
-                      className={`${styles.light_btn} ${styles.btn_next}`}
-                      aria-label="Next"
-                    >
-                      <FaArrowRight />
-                    </a>
-                  </div>
+                  <GatsbyImage
+                    image={getImage(image.gatsbyImageData)}
+                    alt={images.name}
+                    className={styles.image_item}
+                  />
                 </div>
               )
             })}

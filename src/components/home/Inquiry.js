@@ -16,7 +16,7 @@ export default function Inquiry() {
               id="name"
               name="name"
               className={styles.name}
-              placeholder="Kishore Naskar"
+              placeholder="Apurba Chatterjee"
               required
             />
           </div>
@@ -30,15 +30,9 @@ export default function Inquiry() {
               required
             />
           </div>
-          <div className={`${styles.form_group} ${styles.form_date}`}>
-            <div>
-              <label htmlFor="arrive">Arriving on:</label> <br />
-              <input type="date" id="arrive" name="arrive" required />
-            </div>
-            <div>
-              <label htmlFor="depar">Departure:</label> <br />
-              <input type="date" id="depar" name="depar" required />
-            </div>
+          <div className={styles.form_group}>
+            <label htmlFor="arrive">Arriving on:</label> <br />
+            <input type="date" id="arrive" name="arrive" required />
           </div>
           <div>
             <button

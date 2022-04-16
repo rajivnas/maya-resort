@@ -48,7 +48,19 @@ section {
   border-radius: 50px;
   cursor: pointer;
 }
+/* Testimonial sliders */
+.eAyARa,
+.eWjCzc {
+  display: none;
+}
 
+@media (min-width: 679px) {
+  /* Testimonial sliders */
+  .eAyARa,
+  .eWjCzc {
+    display: block;
+  }
+}
 /* Media query  ****************
 **********************************************/
 @media (min-width: 768px) {
@@ -59,24 +71,6 @@ section {
     font-size: 0.85rem;
     font-weight: 400;
   }
-
-  /* React Testimonial */
-  .react-multi-carousel-track {
-    column-gap: 0.2rem !important;
-  }
-  .react-multi-carousel-item > div:hover {
-    background-color: #ffffff !important;
-    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.096);
-  }
-}
-
-/* React Testimonial */
-.react-multiple-carousel__arrow {
-  background: rgba(0, 0, 0, 0.3) !important;
-  z-index: 1 !important;
-}
-.react-multiple-carousel__arrow:hover {
-  background: rgba(0, 0, 0, 0.4) !important;
 }
 
 /* Common styles  */
@@ -130,20 +124,6 @@ section {
 .page-content ul li {
   margin-left: 1rem;
   list-style-type: disc;
-}
-
-/* About page */
-.ab-photo-grid {
-  display: grid;
-  grid-row-gap: 0.2rem;
-  grid-column-gap: 0.3rem;
-  margin-top: 1rem;
-  grid-template-columns: repeat(2, 1fr);
-}
-.ab-image-item {
-  width: 100%;
-  height: 7.6rem;
-  object-fit: cover;
 }
 
 /* Activity page  */
@@ -267,11 +247,6 @@ fieldset {
 
 /* Media query  ****************
 **********************************************/
-@media (min-width: 576px) {
-  .ab-image-item {
-    height: 10rem;
-  }
-}
 
 @media (min-width: 768px) {
   /* Common styles  */
@@ -286,16 +261,6 @@ fieldset {
   }
   .page-content p {
     font-size: 0.9rem;
-  }
-
-  /* About page */
-  .ab-photo-grid {
-    grid-row-gap: 0.5rem;
-    grid-column-gap: 0.5rem;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .ga-photo-grid > div a .ga-image-item:hover {
-    opacity: 0.9;
   }
 
   /* Activity page  */
@@ -376,11 +341,6 @@ fieldset {
   /* Common styles  */
   .default-background {
     min-height: 65vh;
-  }
-
-  /* About page */
-  .ab-image-item {
-    height: 11rem;
   }
 
   /* Activity page  */
