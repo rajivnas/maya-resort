@@ -27,6 +27,7 @@
     "gbimage-bridge": "^0.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-elastic-carousel": "^0.11.5",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.3.1"
   },
