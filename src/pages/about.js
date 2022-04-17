@@ -4,7 +4,6 @@ import { getImage } from "gatsby-plugin-image"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import Background from "../components/share/Background"
 import Layout from "../components/share/Layout"
-import Testimonials from "../components/Testimonials"
 import Seo from "../components/share/Seo"
 
 export default function about({ data }) {
@@ -28,7 +27,6 @@ export default function about({ data }) {
 
       <div className="page-content container">{renderRichText(about.body)}</div>
 
-      <Testimonials />
     </Layout>
   )
 }
