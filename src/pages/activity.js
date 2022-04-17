@@ -28,8 +28,7 @@ export default function activity({ data }) {
         <h2>This is the activity page</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
-          harum obcaecati et, ipsum odit animi alias sit expedita atque sequi
-          sed! ipsum odit animi alias sit
+          harum obcaecati et, ipsum odit animi alias sit
         </p>
 
         {activity.map((item, i) => {

@@ -32,8 +32,7 @@ export default function gallery({ data }) {
         <h2>This is the Gallery page</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
-          harum obcaecati et, ipsum odit animi alias sit expedita atque sequi
-          sed! ipsum odit animi alias sit expedita atque
+          harum obcaecati et, ipsum odit animi alias
         </p>
 
         <div className="ga-photo-grid">
