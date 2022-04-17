@@ -10,7 +10,7 @@ require("dotenv").config({
 
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = "https://pratham-milan.netlify.app",
+  URL: NETLIFY_SITE_URL = "https://mayaresort.netlify.app",
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env
@@ -26,13 +26,7 @@ module.exports = {
     author: `@Kishore`,
     twitterUsername: "@kishorenaskar2",
     image: "/twitter-img.png",
-    keywords: [
-      "Pratham Milan Garden",
-      "Pratham Milan banquet hall",
-      "Banquet hall in Domjur",
-      "Banquet hall in Howrah",
-      "Marriage hall in Howrah",
-    ],
+    keywords: ["Pratham Milan Garden", "Pratham Milan banquet hall"],
     siteUrl,
   },
 

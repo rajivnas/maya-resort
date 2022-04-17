@@ -14,16 +14,18 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@contentful/rich-text-types": "^15.11.0",
-    "@fontsource/poppins": "^4.5.0",
-    "gatsby": "^4.1.0",
+    "@contentful/rich-text-types": "^15.12.0",
+    "@fontsource/poppins": "^4.5.5",
+    "gatsby": "^4.12.1",
     "gatsby-background-image": "^1.6.0",
-    "gatsby-plugin-image": "^2.1.0",
-    "gatsby-plugin-robots-txt": "^1.6.14",
-    "gatsby-plugin-sharp": "^4.1.0",
-    "gatsby-plugin-sitemap": "^5.4.0",
-    "gatsby-source-contentful": "^7.2.0",
-    "gatsby-transformer-sharp": "^4.1.0",
+    "gatsby-link": "^4.12.1",
+    "gatsby-plugin-image": "^2.12.1",
+    "gatsby-plugin-robots-txt": "^1.7.1",
+    "gatsby-plugin-sharp": "^4.12.1",
+    "gatsby-plugin-sitemap": "^5.12.1",
+    "gatsby-react-router-scroll": "^5.12.1",
+    "gatsby-source-contentful": "^7.10.1",
+    "gatsby-transformer-sharp": "^4.12.1",
     "gbimage-bridge": "^0.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -32,7 +34,7 @@
     "react-icons": "^4.3.1"
   },
   "devDependencies": {
-    "prettier": "^2.4.1"
+    "prettier": "^2.6.2"
   },
   "repository": {
     "type": "git",
