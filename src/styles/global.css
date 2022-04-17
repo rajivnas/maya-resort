@@ -53,11 +53,19 @@ section {
 .eWjCzc {
   display: none;
 }
+.hJJzxj,
+.hJKYRZ {
+  display: none;
+}
 
 @media (min-width: 679px) {
   /* Testimonial sliders */
   .eAyARa,
   .eWjCzc {
+    display: block;
+  }
+  .hJJzxj,
+  .hJKYRZ {
     display: block;
   }
 }
